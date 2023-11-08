@@ -1,0 +1,289 @@
+.data
+str0: .asciiz "\n"
+str1: .asciiz ", "
+str2: .asciiz ", "
+str3: .asciiz "\n"
+
+
+.text
+li $t0, 4
+sw $t0, 0($gp)
+j main
+nop
+
+
+hhh:
+addi $sp, $sp, -44
+lw $t0, 56($sp)
+addu $s0, $t0, $0            # i
+mult $s0, $s0
+mflo $t3
+sw $t3, 0($sp)
+li $t1, 1
+xor $t2, $s0, $t1
+sltiu $t2, $t2, 1
+sw $t2, 8($sp)
+lw $t0, 8($sp)
+addu $t9, $t0, $0
+beq $t0, $0, label1
+label1:
+bne $t9, $0, if1begin
+j if1else
+nop
+if1begin:
+li $v0, 1
+addi $sp, $sp, 44
+lw $sp, 4($sp)
+jr $ra
+nop
+j if1end
+nop
+if1else:
+j if1end
+nop
+if1end:
+li $t1, 2
+xor $t2, $s0, $t1
+sltiu $t2, $t2, 1
+sw $t2, 12($sp)
+lw $t0, 12($sp)
+addu $t9, $t0, $0
+beq $t0, $0, label2
+label2:
+bne $t9, $0, if2begin
+j if2else
+nop
+if2begin:
+li $v0, 2
+addi $sp, $sp, 44
+lw $sp, 4($sp)
+jr $ra
+nop
+j if2end
+nop
+if2else:
+j if2end
+nop
+if2end:
+lw $t0, 0($sp)
+lw $t1, 0($sp)
+mult $t0, $t1
+mflo $t3
+li $t1, 10
+div $t3, $t1
+mfhi $t3
+sw $t3, 0($sp)
+li $t1, 1
+subu $t3, $s0, $t1
+sw $t3, 24($sp)
+sw $s0, -4($sp)
+add $t0, $t3, $0
+sw $t0, -8($sp)
+sw $ra, -12($sp)
+sw $sp, -16($sp)
+addi $sp, $sp, -20
+jal hhh
+nop
+lw $ra, -12($sp)
+lw $t3, 24($sp)
+lw $s0, -4($sp)
+sw $v0, 28($sp)
+li $t1, 2
+subu $t4, $s0, $t1
+sw $t3, 24($sp)
+sw $t4, 32($sp)
+sw $s0, -4($sp)
+add $t0, $t4, $0
+sw $t0, -8($sp)
+sw $ra, -12($sp)
+sw $sp, -16($sp)
+addi $sp, $sp, -20
+jal hhh
+nop
+lw $ra, -12($sp)
+lw $t3, 24($sp)
+lw $t4, 32($sp)
+lw $s0, -4($sp)
+sw $v0, 36($sp)
+lw $t0, 28($sp)
+lw $t1, 36($sp)
+addu $t5, $t0, $t1
+add $v0, $t5, $0
+addi $sp, $sp, 44
+lw $sp, 4($sp)
+jr $ra
+nop
+
+
+main:
+addi $sp, $sp, -160
+li $t0, 2
+sw $t0, 0($sp)
+li $t0, 5
+sw $t0, 4($sp)
+li $v0, 5
+syscall        # getint tmp10
+sw $v0, 8($sp)
+lw $t0, 8($sp)
+sw $t0, 0($sp)
+li $v0, 5
+syscall        # getint tmp11
+sw $v0, 12($sp)
+lw $t0, 12($sp)
+sw $t0, 4($sp)
+li $t0, 7
+li $t1, 5923
+mult $t0, $t1
+mflo $t3
+li $t1, 56
+div $t3, $t1
+mflo $t3
+li $t1, 56
+mult $t3, $t1
+mflo $t3
+sw $t3, 24($sp)
+li $t0, 3
+sw $t0, -4($sp)
+sw $ra, -8($sp)
+sw $sp, -12($sp)
+addi $sp, $sp, -16
+jal hhh
+nop
+lw $ra, -8($sp)
+lw $t3, 24($sp)
+sw $v0, 28($sp)
+sw $t3, 24($sp)
+lw $t0, 28($sp)
+sw $t0, -4($sp)
+sw $ra, -8($sp)
+sw $sp, -12($sp)
+addi $sp, $sp, -16
+jal hhh
+nop
+lw $ra, -8($sp)
+lw $t3, 24($sp)
+sw $v0, 32($sp)
+lw $t1, 32($sp)
+subu $t3, $t3, $t1
+li $t0, 1
+li $t1, 2
+addu $t4, $t0, $t1
+li $t0, 89
+li $t1, 2
+div $t0, $t1
+mflo $t5
+li $t1, 36
+mult $t5, $t1
+mflo $t5
+li $t1, 53
+subu $t5, $t5, $t1
+li $t1, 1
+div $t5, $t1
+mflo $t5
+li $t1, 6
+mult $t5, $t1
+mflo $t5
+subu $t4, $t4, $t5
+li $t0, 45
+li $t1, 56
+mult $t0, $t1
+mflo $t5
+li $t1, 85
+div $t5, $t1
+mflo $t5
+li $t1, 56
+subu $t5, $t5, $t1
+li $t0, 35
+li $t1, 56
+mult $t0, $t1
+mflo $t6
+li $t1, 4
+div $t6, $t1
+mflo $t6
+addu $t5, $t5, $t6
+li $t1, 9
+subu $t5, $t5, $t1
+li $t0, 2
+mult $t0, $t5
+mflo $t5
+subu $t4, $t4, $t5
+addu $t3, $t3, $t4
+sw $t3, 4($sp)
+li $t0, 5
+li $t1, -1
+mult $t0, $t1
+mflo $t3
+li $t1, -1
+mult $t3, $t1
+mflo $t3
+sw $t3, 108($sp)
+li $t0, 10
+sw $t0, 120($sp)
+while1head:
+lw $t0, 108($sp)
+lw $t1, 108($sp)
+mult $t0, $t1
+mflo $t3
+lw $t1, 108($sp)
+mult $t3, $t1
+mflo $t3
+lw $t1, 108($sp)
+mult $t3, $t1
+mflo $t3
+lw $t1, 108($sp)
+mult $t3, $t1
+mflo $t3
+lw $t1, 108($sp)
+mult $t3, $t1
+mflo $t3
+lw $t0, 120($sp)
+slt $t2, $t0, $t3
+sw $t2, 144($sp)
+lw $t0, 144($sp)
+addu $t9, $t0, $0
+beq $t0, $0, label3
+label3:
+bne $t9, $0, while1begin
+j while1end
+nop
+while1begin:
+lw $t0, 0($gp)
+lw $t1, 0($gp)
+mult $t0, $t1
+mflo $t3
+li $t1, 10000
+div $t3, $t1
+mfhi $t3
+sw $t3, 0($gp)
+lw $t0, 120($sp)
+li $t1, 1
+addu $t3, $t0, $t1
+sw $t3, 120($sp)
+j while1head
+nop
+while1end:
+lw $a0, 0($sp)
+li $v0, 1
+syscall        # printf i
+li $v0, 4
+la $a0, str1
+syscall        # printf string
+lw $a0, 4($sp)
+li $v0, 1
+syscall        # printf j
+li $v0, 4
+la $a0, str2
+syscall        # printf string
+lw $a0, 108($sp)
+li $v0, 1
+syscall        # printf k
+li $v0, 4
+la $a0, str3
+syscall        # printf string
+j programEnd
+nop
+
+
+programEnd:
+li $v0, 10
+syscall

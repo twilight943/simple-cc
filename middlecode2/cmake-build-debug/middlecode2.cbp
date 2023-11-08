@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="middlecode2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/codeproject/C++/middlecode2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/codeproject/C++/middlecode2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="middlecode2">
+				<Option output="D:/codeproject/C++/middlecode2/cmake-build-debug/middlecode2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/codeproject/C++/middlecode2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/codetool/complier/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0"/>
+					<Add directory="D:/codetool/complier/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/x86_64-w64-mingw32"/>
+					<Add directory="D:/codetool/complier/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/backward"/>
+					<Add directory="D:/codetool/complier/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="D:/codetool/complier/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="D:/codetool/complier/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="D:/codetool/complier/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 middlecode2"/>
+					<CompileFile command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="middlecode2/fast">
+				<Option output="D:/codeproject/C++/middlecode2/cmake-build-debug/middlecode2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/codeproject/C++/middlecode2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/codetool/complier/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0"/>
+					<Add directory="D:/codetool/complier/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/x86_64-w64-mingw32"/>
+					<Add directory="D:/codetool/complier/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/backward"/>
+					<Add directory="D:/codetool/complier/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="D:/codetool/complier/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="D:/codetool/complier/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="D:/codetool/complier/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 middlecode2/fast"/>
+					<CompileFile command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/codeproject/C++/middlecode2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/codetool/complier/msys2/mingw64/bin/mingw32-make.exe -f &quot;D:/codeproject/C++/middlecode2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/codeproject/C++/middlecode2/Error.cpp">
+			<Option target="middlecode2"/>
+		</Unit>
+		<Unit filename="D:/codeproject/C++/middlecode2/Error.h">
+			<Option target="middlecode2"/>
+		</Unit>
+		<Unit filename="D:/codeproject/C++/middlecode2/MiddleCode.cpp">
+			<Option target="middlecode2"/>
+		</Unit>
+		<Unit filename="D:/codeproject/C++/middlecode2/MiddleCode.h">
+			<Option target="middlecode2"/>
+		</Unit>
+		<Unit filename="D:/codeproject/C++/middlecode2/SymbolTable.cpp">
+			<Option target="middlecode2"/>
+		</Unit>
+		<Unit filename="D:/codeproject/C++/middlecode2/SymbolTable.h">
+			<Option target="middlecode2"/>
+		</Unit>
+		<Unit filename="D:/codeproject/C++/middlecode2/SyntaxAnalyzer.cpp">
+			<Option target="middlecode2"/>
+		</Unit>
+		<Unit filename="D:/codeproject/C++/middlecode2/SyntaxAnalyzer.h">
+			<Option target="middlecode2"/>
+		</Unit>
+		<Unit filename="D:/codeproject/C++/middlecode2/WordAnalyzer.cpp">
+			<Option target="middlecode2"/>
+		</Unit>
+		<Unit filename="D:/codeproject/C++/middlecode2/WordAnalyzer.h">
+			<Option target="middlecode2"/>
+		</Unit>
+		<Unit filename="D:/codeproject/C++/middlecode2/main.cpp">
+			<Option target="middlecode2"/>
+		</Unit>
+		<Unit filename="D:/codeproject/C++/middlecode2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
